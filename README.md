@@ -229,14 +229,116 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 ---
 ## 10. 🔍진행과정 중 프로그램 개선 노력
 
-### 10.1 
-서울시 25개 구를 경제·상권 특성으로 3개 군집화
-- 기준: 거주지/소득과 도서관 이용률 간의 [상관관계](https://www.sisain.co.kr/news/articleView.html?idxno=47046)를 바탕으로
-  - **Group_A**: 강남, 서초, 송파, 종로, 중구, 영등포, 용산
-  - **Group_B**: 강동, 마포, 서대문, 성동, 광진, 동작, 양천
-  - **Group_C**: 그 외 구
+### 10.1 데이터 수집 부문
 
-  <img src="./img/living_area_grouped.png" width=400/>
+처음에는 TripAdvisor에서 25개씩의 리뷰를 크롤링하여 데이터를 수집하기로 했지만, 관광지의 상세 정보(주소, 주차 가능 여부, 화장실 여부 등)는 제대로 수집되지 않았습니다. 이에 따라, VisitKorea 사이트를 활용하여 데이터를 보충하였습니다.
+
+[데이터 출처]
+
+국내 최대 관광정보 포털 사이트 VisitKorea
+
+링크: Welcome to KTO
+
+이유:
+
+지역별 관광지 전부 확인 가능
+
+태그별 관광지 분류 및 정보 추출 가능
+
+크롤링 가능(가능 여부 확인 완료)
+
+상세 정보(주소, 주차 가능 여부 등) 및 댓글 포함
+
+### 10.2 전처리 부문
+
+데이터 전처리 과정에서 중복 확인, 누락된 정보 확인 및 컬럼 수정 작업을 진행하였습니다.
+
+중복 확인:
+
+place 컬럼을 기준으로 중복된 데이터를 찾아 제거하였습니다.
+
+코드:
+
+df = pd.read_csv(파일경로)
+duplicates = df[df.duplicated(subset=['place'], keep=False)]
+duplicates
+
+
+정보 누락 확인:
+
+info 컬럼에서 누락된 데이터를 찾아 추가하거나 수정하였습니다.
+
+코드:
+
+df = pd.read_csv(파일경로)
+duplicates = df[df['info'].isna()]
+duplicates
+
+
+불필요한 컬럼 제거 및 수정:
+
+Unnamed: 0, 오류 컬럼 등을 제거하고, 컬럼명에 있는 불필요한 문자를 수정하였습니다.
+
+코드:
+
+df = pd.read_csv(파일경로)
+df['영유아가족 기타상세'] = df['영유아가족\r\n기타상세']
+df.drop(['영유아가족\r\n기타상세','Unnamed: 0','Unnamed: 23'], axis=1, inplace=True)
+df.to_csv('지역이름(전부완료).csv', index=False)
+
+
+체험 프로그램 합치기:
+
+체험 프로그램과 체험프로그램 컬럼을 합쳐서 체험 컬럼으로 만들었습니다.
+
+코드:
+
+df = pd.read_csv('파일경로')
+data = []
+for i in range(len(df)):
+    a = df.iloc[i]['체험프로그램']
+    b = df.iloc[i]['체험 프로그램']
+    if type(a) == float and type(b) == float:
+        data.append(a)
+    elif (type(a) == float and type(b) != float):
+        data.append(b)
+    elif (type(a) != float and type(b) == float):
+        data.append(a)
+    else:
+        data.append(a + " " + b)
+df['체험'] = data
+df.drop(['체험 프로그램', '체험프로그램'], axis=1, inplace=True)
+df.to_csv('지역이름(전부완료).csv', index=False)
+
+
+숙박업소 및 음식점 제외:
+
+캠핑장만 허용하고, 숙박업소 및 음식점은 전부 제외하였습니다.
+
+### 10.3 임베딩 모델 개선
+
+임베딩 모델 변경:
+
+초기에는 all-MiniLM-L12-v2 모델을 사용했으나, 인코딩 시간이 너무 길어 all-MiniLM-L6-v2 모델로 변경하여 속도 개선을 이루었습니다.
+
+변경 후 인코딩 속도가 크게 향상되었습니다.
+
+### 10.4 벡터 DB 개선
+
+태그 정보 추가:
+
+관광지에 대한 #문화공간, #가볼래터, #관광지, #남녀노소, #여행구독, #연인과함께와 같은 태그를 추가하여 벡터 DB에 넣었습니다. 이를 통해 리트리버의 검색 성능이 개선되었습니다.
+
+유사도 검색 방법 개선:
+
+벡터 DB에서 유사도 검색을 할 때, 기존 방식이 성능이 떨어졌기 때문에 검색 방식을 개선하여 더 정확한 결과를 도출할 수 있었습니다.
+
+### 10.5 청킹 부문
+
+CharacterTextSplitter -> RecursiveCharacterTextSplitter:
+
+처음에는 CharacterTextSplitter를 사용했으나, 도큐먼트 컨텐츠가 제대로 청킹되지 않았습니다. 로우 수가 기존 데이터와 동일했으나, RecursiveCharacterTextSplitter로 변경하였더니, 총 로우 개수가 늘어나면서 제대로 청킹이 이루어졌습니다.
+
 
 ---
 ## 11.💻 수행결과
