@@ -217,8 +217,17 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ## 9. 📻 테스트 계획 및 결과 보고서
 
+
+
 ### 9.1 테스트 계획
 - `gender`, `age`, `education`, `income`, `experience`, `job`, `living_area`, `distance`, `future_use` 전부 결측치 없음.
+- 테스트 계획서 :
+	언제 테스트
+	어떤 환경
+	테스트할 항목
+	평가기준
+	어떤 문항
+	테스트 했을 때 결과가 어떻게 나와야 하는지
 
   <img src="./img/결측치없음.png" width=300/> 
 
