@@ -13,10 +13,10 @@
 5. [WBS](#5-%EF%B8%8F-wbs)
 6. [요구사항 명세서](#6-요구사항-명세서)
 7. [수집 데이터 및 전처리 요약](#7-수집-데이터-및-전처리-요약)
-8. [DB 연동 구현 코드](#8DB-연동-구현-코드)
-9. [테스트 계획&결과 보고서](#9-테스트-계획-및-결과-보고서)
-10. [진행과정 중 프로그램 개선 노력](#10진행과정-중-프로그램-개선-노력)
-11. [수행결과](#11수행결과)
+8. [DB 연동 구현 코드](#8--db-연동-구현-코드)
+9. [테스트 계획&결과 보고서](#9--테스트-계획-및-결과-보고서)
+10. [진행과정 중 프로그램 개선 노력](#10-진행과정-중-프로그램-개선-노력)
+11. [수행결과](#11-수행결과)
 12. [한 줄 회고](#12-%E2%80%8D-한-줄-회고)
 <br>
 <br>
@@ -104,6 +104,8 @@
 Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 여행·관광 서비스 분야에서 디지털 미디어와 대화형 서비스 기술(챗봇 등)은 빠르게 확산되고 있습니다. <br>
 고객들은 여행 상품 검색, 일정 예약·변경, 환불 요청 등 다양한 활동을 온라인에서 수행하며, 이 과정에서 인공지능 기반 대화 시스템을 활용하는 경우가 늘어나고 있습니다. <br>
 이러한 대화형 기술의 주요 장점은 다음과 같습니다.
+
+<br>
 
 <br>
 
@@ -211,7 +213,8 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ## 8. 🔗 DB 연동 구현 코드
 
-🔗 [Chroma DB 연동 구현 코드](https://github.com/PrettyGirlss/crawling-data/blob/main/RAG/chromadb_with_llm.ipynb)
+[Chroma DB 연동 구현 코드](https://github.com/PrettyGirlss/crawling-data/blob/main/RAG/chromadb_with_llm.ipynb)
+
 ---
 
 ## 9. 📻 테스트 계획 및 결과 보고서
@@ -299,19 +302,19 @@ CharacterTextSplitter -> RecursiveCharacterTextSplitter: <br>
 
 프로그램 개선 과정에서 Retriever 객체의 성능을 높이기 위해 metadata_field_info를 정의하여 문서에 대한 더 구체적인 메타데이터 정보를 제공하고, 이를 통해 검색 성능을 향상시켰습니다.
 
-##### 1. AttributeInfo 클래스를 사용해 관광지 정보
+**1. AttributeInfo 클래스를 사용해 관광지 정보**
 (예: place, 홈페이지, 주소, 이용시간, 휴일 등)를 세분화하여 검색 성능을 향상시켰습니다.
 
-##### 2. 문서 내용 및 메타데이터 필드 정보
+**2. 문서 내용 및 메타데이터 필드 정보**
 지역별 관광지 설명과 메타데이터를 document_content에 결합하여 SelfQueryRetriever에 전달했습니다.
 
-##### 3. SelfQueryRetriever 개선
+**3. SelfQueryRetriever 개선**
 SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연결된 리트리버 객체를 인스턴스화하고, 더 정확한 검색이 가능하도록 했습니다.
 
 <br>
 
 ---
-## 11.💻 수행결과
+## 11. 💻 수행결과
 
 
 ## 12. 🧑‍💻 한 줄 회고
