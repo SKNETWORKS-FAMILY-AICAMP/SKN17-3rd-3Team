@@ -1,6 +1,25 @@
 # SKN17-3rd-3Team
 # 🗺️3RD_PROJECT_3TEAM
 
+---
+# 📚 Contents
+
+<br>
+
+1. [🌟팀 소개](#1팀-소개)
+2. [🎞️프로젝트 개요](#2프로젝트-개요)
+3. [🛠️기술 스택 및 사용 모델](#3🛠️-기술-스택-및-사용-모델)
+4. [🧩시스템 아키텍처 ](#4🧩시스템-아키텍처 )
+5. [🖼️ WBS](#5🖼️-WBS)
+6. [📝요구사항 명세서](#6📝요구사항-명세서)
+7. [📁수집 데이터 및 전처리 요약](#7📁수집-데이터-및-전처리-요약)
+8. [🔗 DB 연동 구현 코드](#8🔗DB-연동-구현-코드)
+9. [📻테스트 계획&결과 보고서](#9📻-테스트-계획-및-결과-보고서)
+10. [🔍진행과정 중 프로그램 개선 노력](#10🔍진행과정-중-프로그램-개선-노력)
+11. [💻수행결과](#11💻수행결과)
+<br>
+<br>
+
 <br>
 ## 1. 팀 소개
 ###💡**팀명 : **
@@ -28,7 +47,7 @@
 
 ---
 
-## 2. 프로젝트 개요
+## 2. 📽️ 프로젝트 개요
 
 <br>
 
@@ -100,7 +119,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 
 
-## 3.  **기술 스택 및 사용 모델** 🛠️
+## 3. 🛠️ 기술 스택 및 사용 모델
 
 | **분류**         | **기술/도구**                                                                            |
 |------------------|------------------------------------------------------------------------------------------|
@@ -121,7 +140,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ---
 
-## 4. 시스템 아키텍처 
+## 4. 🧩시스템 아키텍처 
 
 ### 이미지 사진 넣어야돼요
 
@@ -132,7 +151,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ---
 
-## 5. WBS
+## 5. 🖼️ WBS
 
 		
 <img width="964" height="409" alt="image" src="https://github.com/user-attachments/assets/ad3d9aa7-c324-4c11-9da6-90727d9254c2" />
@@ -140,14 +159,14 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ---
 
-## 6. 요구사항 명세서
+## 6. 📝요구사항 명세서
 
 <img width="970" height="247" alt="image" src="https://github.com/user-attachments/assets/6ce872e9-db14-4740-8868-41d0081bf4d5" />
 
 ---
 
 
-## 7. 수집 데이터 및 전처리 요약
+## 7. 📁수집 데이터 및 전처리 요약
 
 ### 7.1 수집한 데이터
 
@@ -168,13 +187,13 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ---
 
-## 8. DB 연동 구현 코드
+## 8. 🔗 DB 연동 구현 코드
 
 
 🔗 Chroma DB 연동 구현 코드 : https://github.com/PrettyGirlss/crawling-data/blob/main/RAG/chromadb_with_llm.ipynb
 ---
 
-## 9. 테스트 계획 및 결과 보고서
+## 9. 📻 테스트 계획 및 결과 보고서
 
 ### 9.1 테스트 계획
 - `gender`, `age`, `education`, `income`, `experience`, `job`, `living_area`, `distance`, `future_use` 전부 결측치 없음.
@@ -187,7 +206,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
   <img src="./img/income.png" width=800/>
 ---
-## 10. 진행과정 중 프로그램 개선 노력
+## 10. 🔍진행과정 중 프로그램 개선 노력
 
 ### 10.1 
 서울시 25개 구를 경제·상권 특성으로 3개 군집화
@@ -199,7 +218,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
   <img src="./img/living_area_grouped.png" width=400/>
 
 ---
-## 11.수행결과
+## 11.💻 수행결과
 
 
 ### **팀원 한 줄 회고** 🧑‍💻
