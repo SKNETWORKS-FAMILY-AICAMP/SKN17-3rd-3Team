@@ -16,7 +16,7 @@
 8. [DB 연동 구현 코드](#8--db-연동-구현-코드)
 9. [테스트 계획&결과 보고서](#9--테스트-계획-및-결과-보고서)
 10. [진행과정 중 프로그램 개선 노력](#10-진행과정-중-프로그램-개선-노력)
-11. [수행결과](#11-수행결과)
+11. [수행결과](#11--수행결과)
 12. [한 줄 회고](#12-%E2%80%8D-한-줄-회고)
 <br>
 <br>
@@ -44,7 +44,7 @@
 
 | 🥇 김태연 | 🥇 박지수 | 🥇 신승철 | 🥇 이재은 | 🥇 조해리 |
 |---|---|---|---|---|
-| <img width="202" height="268" alt="image" src="https://github.com/user-attachments/assets/6ca78457-21eb-4345-ab44-31762322ed82" /> | <img width="230" height="300" alt="image" src="https://github.com/user-attachments/assets/112bf72d-9b9e-402b-ac76-774303473aa3" /> | <img width="202" height="268" alt="image" src="https://github.com/user-attachments/assets/4a8a8133-7764-46a0-b0b3-11ae0f7531b2" /> | <img width="202" height="268" alt="image" src="https://github.com/user-attachments/assets/c08ac296-682e-45a4-85be-33b2eb3fad91" /> | <img width="202" height="268" alt="image" src="https://github.com/user-attachments/assets/03371a1f-70c9-4cd2-866a-8d9cffaa8331" /> |
+| <img width="150" height="190" alt="image" src="https://github.com/user-attachments/assets/6ca78457-21eb-4345-ab44-31762322ed82" /> | <img width="150" height="190" alt="image" src="https://github.com/user-attachments/assets/112bf72d-9b9e-402b-ac76-774303473aa3" /> | <img width="150" height="190" alt="image" src="https://github.com/user-attachments/assets/4a8a8133-7764-46a0-b0b3-11ae0f7531b2" /> | <img width="150" height="190" alt="image" src="https://github.com/user-attachments/assets/c08ac296-682e-45a4-85be-33b2eb3fad91" /> | <img width="150" height="190" alt="image" src="https://github.com/user-attachments/assets/03371a1f-70c9-4cd2-866a-8d9cffaa8331" /> |
 | [@Taeyeon514](https://github.com/Taeyeon514) | [@01lpa](https://github.com/01lpa) | [@ssshinppson](https://github.com/ssshinppson) | [@JAEEUN0129](https://github.com/JAEEUN0129) | [@Haer111](https://github.com/Haer111) |
 
 <br>
@@ -166,9 +166,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ## 4. 🧩시스템 아키텍처 
 
-### 이미지 사진 넣어야돼요
-
-<img src="./img/WBS.png" width=700/>
+<img src="./시스템아키텍처.jpg" width=700/>
 
 <br>
 
@@ -314,6 +312,7 @@ SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연�
 <br>
 
 ---
+
 ## 11. 💻 수행결과
 
 
