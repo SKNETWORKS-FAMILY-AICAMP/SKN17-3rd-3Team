@@ -247,58 +247,19 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ### 10.2 전처리 부문
 
-데이터 전처리 과정에서 중복 확인, 누락된 정보 확인 및 컬럼 수정 작업을 진행하였습니다.
+전처리 과정에서 중복된 데이터 및 누락된 정보를 처리하고, 불필요한 컬럼을 정리하는 작업을 진행했습니다. 이를 통해 데이터의 품질을 높였습니다.
 
 중복 확인:
 place 컬럼을 기준으로 중복된 데이터를 찾아 제거하였습니다.
 
-코드:
-df = pd.read_csv(파일경로)
-duplicates = df[df.duplicated(subset=['place'], keep=False)]
-duplicates
-
-
 정보 누락 확인:
 info 컬럼에서 누락된 데이터를 찾아 추가하거나 수정하였습니다.
 
-코드:
-df = pd.read_csv(파일경로)
-duplicates = df[df['info'].isna()]
-duplicates
-
-
 불필요한 컬럼 제거 및 수정:
-
 Unnamed: 0, 오류 컬럼 등을 제거하고, 컬럼명에 있는 불필요한 문자를 수정하였습니다.
-
-코드:
-df = pd.read_csv(파일경로)
-df['영유아가족 기타상세'] = df['영유아가족\r\n기타상세']
-df.drop(['영유아가족\r\n기타상세','Unnamed: 0','Unnamed: 23'], axis=1, inplace=True)
-df.to_csv('지역이름(전부완료).csv', index=False)
-
 
 체험 프로그램 합치기:
 체험 프로그램과 체험프로그램 컬럼을 합쳐서 체험 컬럼으로 만들었습니다.
-
-코드:
-df = pd.read_csv('파일경로')
-data = []
-for i in range(len(df)):
-    a = df.iloc[i]['체험프로그램']
-    b = df.iloc[i]['체험 프로그램']
-    if type(a) == float and type(b) == float:
-        data.append(a)
-    elif (type(a) == float and type(b) != float):
-        data.append(b)
-    elif (type(a) != float and type(b) == float):
-        data.append(a)
-    else:
-        data.append(a + " " + b)
-df['체험'] = data
-df.drop(['체험 프로그램', '체험프로그램'], axis=1, inplace=True)
-df.to_csv('지역이름(전부완료).csv', index=False)
-
 
 숙박업소 및 음식점 제외:
 캠핑장만 허용하고, 숙박업소 및 음식점은 전부 제외하였습니다.
