@@ -404,9 +404,12 @@ CharacterTextSplitter -> RecursiveCharacterTextSplitter: <br>
 
 <br>
 
-### 1. Retriever 객체 개선
+### 1. Retriever 객체 개선 ->SelfQueryRetriever
+<br>
+: 메타데이터 필드 와 문서 내용에 대한 간단한 설명을 미리 제공
 
-프로그램 개선 과정에서 Retriever 객체의 성능을 높이기 위해 metadata_field_info를 정의하여 문서에 대한 더 구체적인 메타데이터 정보를 제공하고, 이를 통해 검색 성능을 향상시켰습니다.
+프로그램 개선 과정에서 Retriever 객체의 성능을 높이기 위해
+metadata_field_info를 정의하여 문서에 대한 더 구체적인 메타데이터 정보를 제공하고, 이를 통해 검색 성능을 향상시켰습니다.
 
 **1. AttributeInfo 클래스를 사용해 관광지 정보**
 (예: place, 홈페이지, 주소, 이용시간, 휴일 등)를 세분화하여 검색 성능을 향상시켰습니다.
