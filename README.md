@@ -291,7 +291,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면, 최근 �
 
 ## 8. 🔗 DB 연동 구현 코드
 
-[Chroma DB 연동 구현 코드](https://github.com/PrettyGirlss/crawling-data/blob/main/RAG/chromadb_with_llm.ipynb)
+[FAISS DB 연동 구현 코드](https://github.com/PrettyGirlss/crawling-data/blob/main/RAG/rag.py)
 
 ---
 
