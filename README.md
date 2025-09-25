@@ -245,7 +245,14 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 - 상세 정보(주소, 주차 가능 여부, 장애인 시설 등) 및 리뷰 댓글 포함
 
 
-<img src="img/crawling_ex(1).png" width=300/> <img src="img/crawling_ex(2).png" width=300/> <img src="img/crawling_ex(3).png" width=300/> <img src="img/crawling_ex(4).png" width=300/>
+<p align="center">
+  <img src="img/crawling_ex(1).png" width="48%"/>
+  <img src="img/crawling_ex(2).png" width="48%"/>
+</p>
+<p align="center">
+<img src="img/crawling_ex(3).png" width=500/> 
+<img src="img/crawling_ex(4).png" width=400/>
+</p>
 
 <br>
 
