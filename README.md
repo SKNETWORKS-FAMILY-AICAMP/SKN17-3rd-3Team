@@ -391,9 +391,9 @@ SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연�
 
 | 모델 이름 | 특징 | 파인튜닝된 모델 허깅페이스 링크 |
 | --- | --- | --- |
-| **HyperCLOVA X SEED** | 한국어 최적화 모델로, 고객 리뷰 분석에 강점. 한/중/일 최적화. | [HyperCLOVA X SEED](https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed-6808cf1affbfdfeed0481887) |
-| **블라썸 한국어 최적화 모델** | 한국어에 최적화된 파인튜닝 모델로, 효율적인 한국어 문장 생성 가능. | [Bllossom/llama-3.2-Korean-Bllossom-AICA-5B](https://huggingface.co/Bllossom/llama-3.2-Korean-Bllossom-AICA-5B) |
-| **Saxo Linkbricks-Horizon AI-Korean** | 한/중/일 최적화된 모델로, 고객 리뷰 분석에서 높은 성능을 보임. | [Saxo/Linkbricks-Horizon-AI-Korean-llama-3.1-sft-dpo-8B](https://huggingface.co/Saxo/Linkbricks-Horizon-AI-Korean-llama-3.1-sft-dpo-8B) |
+| **HyperCLOVA X SEED** | 한국어 최적화 모델로, 고객 리뷰 분석에 강점. 한/중/일 최적화. | [HyperCLOVA X SEED]( https://huggingface.co/0lipa/SEED-1.5B-travel-finetuned) |
+| **블라썸 한국어 최적화 모델** | 한국어에 최적화된 파인튜닝 모델로, 효율적인 한국어 문장 생성 가능. | [Bllossom/llama-3.2-Korean-Bllossom-AICA-5B]([https://huggingface.co/Bllossom/llama-3.2-Korean-Bllossom-AICA-5B](https://huggingface.co/CHOROROK/llama3.2-travel-finetuned2)) |
+| **Saxo Linkbricks-Horizon AI-Korean** | 한/중/일 최적화된 모델로, 고객 리뷰 분석에서 높은 성능을 보임. | [Saxo/Linkbricks-Horizon-AI-Korean-llama-3.1-sft-dpo-8B](https://huggingface.co/0lipa/Linkbricks-Horizon8.0B-travel-finetuned) |
 
 ##### 파인튜닝을 위한 데이터셋 생성
 
