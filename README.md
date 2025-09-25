@@ -463,6 +463,8 @@ SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연�
 
 ## 12. 💻 수행결과
 
+<img width="1008" height="823" alt="image" src="https://github.com/user-attachments/assets/42ca1e02-6bfd-4f48-a565-66865e8856e7" />
+
 
 ---
 ## 13. 🧑‍💻 한 줄 회고
