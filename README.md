@@ -224,16 +224,20 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
   
 <br>
 
-[HyperCLOVA X SEED - a naver-hyperclovax Collection](https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed-6808cf1affbfdfeed0481887) 과 [LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct) 에 각각 "부모님과 함께 부산 여행에 간다면 어떤 코스를 추천해줄래?", "남자친구랑 함께 제주도 여행을 처음 가는데 어디에 가야할까?"라는 질문을 입력하여 답변을 비교하였습니다.
+[HyperCLOVA X SEED - a naver-hyperclovax Collection](https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed-6808cf1affbfdfeed0481887) 과 [LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct) 에 "부모님과 함께 부산 여행에 간다면 어떤 코스를 추천해줄래?"라는 질문을 입력하여 답변을 비교하였습니다.
 
 
   <img src="./img/결측치없음.png" width=300/> 
 
 
 ### 9.2 결과 보고서
-- `income` : 99 → 모름/무응답 제거
+- HyperCLOVA X SEED <br>
+  <img src="./img/test/seed sllm test.png" width=800/>
 
-  <img src="./img/income.png" width=800/>
+- LGAI-EXAONE <br>
+  <img src=".img/test/lgexaone test.png" width=800/>
+
+  
 ---
 ## 10. 🔍진행과정 중 프로그램 개선 노력
 
