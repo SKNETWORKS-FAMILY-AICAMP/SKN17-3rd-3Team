@@ -221,8 +221,8 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
 
 ### 9.1 테스트 계획
 - 테스트 계획서 : RAG, 파인튜닝 등을 추가하지 않은 sLLM 모델의 응답과 처리 후의 모델의 응답을 비교
-- [HyperCLOVA X SEED - a naver-hyperclovax Collection](https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed-6808cf1affbfdfeed0481887) 과 <br>
-  [LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct) 에 "부모님과 함께 부산 여행에 간다면 어떤 코스를 추천해줄래?"라는 질문을 입력하여 답변을 비교하였습니다.
+- [HyperCLOVA X SEED - a naver-hyperclovax Collection](https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed-6808cf1affbfdfeed0481887) 과 [LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct) 에<br>
+  "부모님과 함께 부산 여행에 간다면 어떤 코스를 추천해줄래?"라는 질문을 입력하여 답변을 비교하였습니다.
 
 
 ### 9.2 결과 보고서
