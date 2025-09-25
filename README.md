@@ -203,7 +203,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면, 최근 �
 
 ## 6. 📝요구사항 명세서
 
-<img width="970" height="247" alt="image" src="https://github.com/user-attachments/assets/6ce872e9-db14-4740-8868-41d0081bf4d5" />
+<img src="img/요구사항명세서.png" width=700/>
 
 ---
 
