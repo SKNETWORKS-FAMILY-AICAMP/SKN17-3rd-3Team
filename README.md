@@ -232,7 +232,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면, 최근 �
   <img src="img/crawling_ex(2).png" width="48%"/>
 </p>
 <p align="center">
-<img src="img/crawling_ex(3).png" width=500/> 
+<img src="img/crawling_ex(3).png" width=450/> 
 <img src="img/crawling_ex(4).png" width=400/>
 </p>
 
