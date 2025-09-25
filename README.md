@@ -333,6 +333,16 @@ Document 객체의 metadata와 page_content 내용을 기존 데이터의 place,
 <img src='img/vectordb(1).png' width=700>
 <br>
 
+##### 기존 documents :
+
+<img width="1970" height="355" alt="image" src="https://github.com/user-attachments/assets/dc033a5e-b40c-4552-b5b4-8ae3542639cb" />
+<br>
+
+##### 변경한 documents :
+
+<img width="1987" height="312" alt="image" src="https://github.com/user-attachments/assets/6aeccbf5-69ed-4167-83f3-47d340fde7ca" />
+<br>
+
 <br>
 
 ### 10.4 청킹 부문
