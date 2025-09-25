@@ -354,15 +354,18 @@ CharacterTextSplitter -> RecursiveCharacterTextSplitter: <br>
 **1. AttributeInfo 클래스를 사용해 관광지 정보**
 (예: place, 홈페이지, 주소, 이용시간, 휴일 등)를 세분화하여 검색 성능을 향상시켰습니다.
 
-![image.png](attachment:3ea0817a-6849-44db-9d81-b41bcaad53ae:image.png)
-![image.png](attachment:5a2a5e19-532a-409c-b8b4-fb0934c630fa:image.png)
+<img width="1025" height="1035" alt="image" src="https://github.com/user-attachments/assets/30e41381-c74e-4b1d-9fec-0c222e0e41e8" />
+<img width="1879" height="309" alt="image" src="https://github.com/user-attachments/assets/289f5fe6-9ec2-4192-b6f7-cf41b16baf2f" />
+
+
 
 **2. 문서 내용 및 메타데이터 필드 정보**
 지역별 관광지 설명과 메타데이터를 document_content에 결합하여 SelfQueryRetriever에 전달했습니다.
 
 **3. SelfQueryRetriever 개선**
 SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연결된 리트리버 객체를 인스턴스화하고, 더 정확한 검색이 가능하도록 했습니다.
-![image.png](attachment:5a2a5e19-532a-409c-b8b4-fb0934c630fa:image.png)
+<img width="700" height="279" alt="image" src="https://github.com/user-attachments/assets/8092f4d1-03f8-49be-b7a3-49929c36cbc1" />
+
 
 <br>
 
