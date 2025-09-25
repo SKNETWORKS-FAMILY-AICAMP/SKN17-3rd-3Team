@@ -330,7 +330,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면, 최근 �
 
 Document 객체 내용 조정 : <br>
 Document 객체의 metadata와 page_content 내용을 기존 데이터의 place, info, review 주소, 태그 등의 컬럼을 다양한 방식으로 조합하여 여러 가지 벡터 DB를 생성하였습니다. <br>
-<img src='img/vectordb(1).png" width=700>
+<img src='img/vectordb(1).png' width=700>
 <br>
 
 <br>
