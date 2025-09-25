@@ -163,7 +163,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면, 최근 �
 
 #### 1. 임베딩 모델 선정 이유
 
-<img src="img/embedding.png" width=700/>
+<img src="img/embedding.jpg" width=700/>
 
 
 <br>
