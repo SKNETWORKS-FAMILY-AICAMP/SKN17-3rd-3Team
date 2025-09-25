@@ -340,24 +340,33 @@ Document 객체의 metadata와 page_content 내용을 기존 데이터의 place,
 CharacterTextSplitter -> RecursiveCharacterTextSplitter: <br>
 처음에는 CharacterTextSplitter를 사용했으나, 도큐먼트 컨텐츠가 제대로 청킹되지 않았습니다. 로우 수가 기존 데이터와 동일했으나, RecursiveCharacterTextSplitter로 변경하였더니, 총 로우 개수가 늘어나면서 제대로 청킹이 이루어졌습니다.
 
+
+---
+
+## 11. 한계
+
 <br>
 
-### 10.5 Retriever 객체 개선
+### 1. Retriever 객체 개선
 
 프로그램 개선 과정에서 Retriever 객체의 성능을 높이기 위해 metadata_field_info를 정의하여 문서에 대한 더 구체적인 메타데이터 정보를 제공하고, 이를 통해 검색 성능을 향상시켰습니다.
 
 **1. AttributeInfo 클래스를 사용해 관광지 정보**
 (예: place, 홈페이지, 주소, 이용시간, 휴일 등)를 세분화하여 검색 성능을 향상시켰습니다.
 
+![image.png](attachment:3ea0817a-6849-44db-9d81-b41bcaad53ae:image.png)
+![image.png](attachment:5a2a5e19-532a-409c-b8b4-fb0934c630fa:image.png)
+
 **2. 문서 내용 및 메타데이터 필드 정보**
 지역별 관광지 설명과 메타데이터를 document_content에 결합하여 SelfQueryRetriever에 전달했습니다.
 
 **3. SelfQueryRetriever 개선**
 SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연결된 리트리버 객체를 인스턴스화하고, 더 정확한 검색이 가능하도록 했습니다.
+![image.png](attachment:5a2a5e19-532a-409c-b8b4-fb0934c630fa:image.png)
 
 <br>
 
-### 10.6 Finetuning
+### 2. Finetuning
 
 ##### 사용한 모델들
 
@@ -379,15 +388,18 @@ SelfQueryRetriever.from_llm() 메서드를 사용하여 벡터 저장소와 연�
 
 위 작업을 통해 **모델의 정확도와 효율성**을 개선하는데 집중했습니다.
 
+### 추가적인 한계점 
+-> 거리까지 고려해 코스를 짜주는 챗봇은 아직 고려하지 못 했습니다.
+-> 실시간 관광지를 반영하기 어려울 수 있습니다.
+
 
 ---
 
-## 11. 💻 수행결과
+
+## 12. 💻 수행결과
 
 
-## 12. 한계
-
-
+---
 ## 13. 🧑‍💻 한 줄 회고
  
 | **이름** | **회고 내용** |
