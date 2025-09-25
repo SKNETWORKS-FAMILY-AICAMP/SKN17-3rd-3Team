@@ -235,7 +235,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
   <img src="./img/test/seed sllm test.png" width=800/>
 
 - LGAI-EXAONE <br>
-  <img src=".img/test/lgexaone test.png" width=800/>
+  <img src="./img/test/lgexaone test.png" width=800/>
 
   
 ---
