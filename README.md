@@ -210,7 +210,41 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면, 최근 �
 
 ## 7. 📁수집 데이터 및 전처리 요약
 
+=======
+### 7.1 데이터 출처
 
+- [대한민국 구석구석](https://korean.visitkorea.or.kr/main/main.do/) 웹크롤링 <br>
+
+<img src="img/crawling(1).png" width=700/>
+- 대한민국 최대 관광 사이트 <br>
+
+<br>
+
+
+**이유:** <br>
+- 지역별 관광지 전부 확인 가능
+- 태그별 관광지 분류 및 정보 추출 가능
+- 크롤링 가능(가능 여부 확인 완료)
+- 상세 정보(주소, 주차 가능 여부, 장애인 시설 등) 및 리뷰 댓글 포함
+
+
+<img src="img/crawling_ex(1).png" width=300/> <img src="img/crawling_ex(2).png" width=300/> <img src="img/crawling_ex(3).png" width=300/> <img src="img/crawling_ex(1).png" width=300/>
+=======
+**데이터 출처 선정 이유:** <br>
+- 지역별 관광지 전부 확인 가능
+- 태그별 관광지 분류 및 정보 추출 가능
+- 크롤링 가능(가능 여부 확인 완료)
+- 상세 정보(주소, 주차 가능 여부, 장애인 시설 등) 및 리뷰 댓글 포함
+
+
+<p align="center">
+  <img src="img/crawling_ex(1).png" width="48%"/>
+  <img src="img/crawling_ex(2).png" width="48%"/>
+</p>
+<p align="center">
+<img src="img/crawling_ex(3).png" width=450/> 
+<img src="img/crawling_ex(4).png" width=400/>
+</p>
 
 
 <br>
