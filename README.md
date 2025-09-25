@@ -295,7 +295,7 @@ Malta대학교의 Mark Anthony Camilleri 교수의 연구에 따르면 최근 �
  
 **7. 이 외 데이터 제거** <br>
 - 안경점, 진돗개 데이터 등의 데이터들을 추가로 제거했습니다.
-<img src = "img/preprocess(2).png" width=600> <img src = "img/preprocess(3).png" width=600>
+<img src = "img/preprocess(3).png" width=600> <img src = "img/preprocess(4).png" width=600>
 
 
 ### 7.3 최종 전처리 결과
